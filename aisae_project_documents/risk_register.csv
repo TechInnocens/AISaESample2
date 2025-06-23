@@ -1,0 +1,13 @@
+# AISaE Risk Register
+# Add your actual risks below, replacing the example rows
+# The dashboard will automatically calculate statistics from your risk data
+
+Risk Name,Developer Priority,Stakeholder Priority,Description,Risk Familiarity,Impact Score,Likelihood Score,Risk Score,Risk Zone,Mitigation Strategy,Owner,Status,Next Action,Due Date,Notes
+False Negative Diagnosis,High,High,AI system fails to detect pathology that human radiologist would catch,Known,5,2,24,Yellow,Implement sensitivity monitoring and human oversight protocols,Clinical Lead,In Progress,Deploy additional validation dataset,2024-01-15,Monitoring shows 6% miss rate in edge cases
+False Positive Diagnosis,High,High,AI system incorrectly flags normal tissue as abnormal,Known,4,3,26,Red,Enhance specificity training and confidence thresholds,ML Engineering,Complete,Retrained model deployed,2023-12-20,Reduced false positive rate by 23%
+Model Bias Across Demographics,High,High,AI performance varies significantly across patient demographics,Foreseeable,5,3,31,Red,Audit training data and implement bias testing protocols,Ethics Officer,In Progress,Complete demographic analysis,2024-02-01,Initial testing shows 8% performance gap
+Data Privacy Breach,Medium,High,Patient medical data could be exposed through system vulnerabilities,Known,5,1,17,Yellow,Implement end-to-end encryption and access controls,Security Team,Complete,Quarterly penetration testing,2024-03-01,Zero incidents in 18 months of operation
+Regulatory Non-Compliance,High,High,System changes could violate medical device regulations,Known,4,2,20,Yellow,Maintain regulatory change control process,Regulatory Affairs,Complete,Annual compliance review,2024-06-01,All changes approved by notified body
+Over-Reliance on AI,Medium,Medium,Clinicians may become overly dependent on AI recommendations,Foreseeable,3,3,21,Yellow,Implement training programs and decision support guidelines,Clinical Training,In Progress,Roll out training modules,2024-01-30,80% of users completed initial training
+System Downtime,Low,Medium,Technical failures could disrupt radiology workflow,Known,3,2,16,Green,Implement redundancy and backup systems,IT Operations,Complete,Monthly system health checks,Ongoing,99.7% uptime achieved in 2024
+Model Drift,Medium,Low,AI performance degrades over time without retraining,Foreseeable,4,2,20,Yellow,Continuous monitoring and automated retraining pipeline,ML Engineering,Complete,Quarterly model evaluation,Ongoing,Performance metrics stable for 12 months
