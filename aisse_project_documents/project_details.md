@@ -6,36 +6,36 @@
 *(These details are project-specific and will not be included in any reusable patterns)*
 
 **Project Name** (full title of your project)
-<!--%PROJ_NAME-->SmartCity Traffic AI: Adaptive Traffic Management System
+<!--%PROJ_NAME-->AI-Powered Content Recommendation System
 
 **Current Development Stage** (choose from Concept, Prototype, Release Development, or Operations)
 <!--%CURRENT_STAGE-->Prototype
 
 **Team/Organisation**
-- Lead organisation or team: Transport for London Digital Innovation Team
-- Project website or repository: https://github.com/TfL-Digital/smartcity-traffic-ai
+- Lead organisation or team: Digital Platform Engineering Team
+- Project website or repository: https://github.com/platform-ai/content-recommendations
 
 ### Context
 
 **Purpose**
 Describe the purpose of this system from the perspective of its users. What need or goal does this AI system address?
-To optimise traffic flow in central London by dynamically adjusting traffic light timings, coordinating signal phases across intersections, and providing real-time routing recommendations to reduce congestion, emissions, and journey times for all road users including pedestrians, cyclists, and vehicles.
+To provide personalised content recommendations that help users discover relevant and engaging articles, videos, and other content based on their interests, reading history, and preferences. The system aims to enhance user experience by surfacing high-quality content while maintaining fairness, transparency, and user control over the recommendation process.
 
 **Environment**
 Describe the context in which this system will operate (e.g. industry, work area, geographies, etc)
-Urban transport infrastructure across Central London, initially covering Zone 1 with 200+ controlled intersections. The system operates 24/7 in a complex multi-modal transport environment including buses, emergency vehicles, cyclists, and pedestrians.
+Digital content platform serving millions of users globally across web and mobile applications. The system operates 24/7 in a competitive media landscape where user engagement and content quality are critical success factors. Regulatory oversight includes GDPR, emerging AI legislation, and platform responsibility frameworks.
 
 **Stakeholders**
 List all groups who will be impacted by this system (direct users, affected parties, decision makers)
-Primary users: TfL traffic controllers, emergency services dispatchers, public transport operators
-Secondary stakeholders: London commuters, residents, business owners, delivery companies, cyclists, pedestrians
-Decision makers: TfL board, Mayor of London, borough councils, emergency services
+Primary users: Platform users seeking content, content creators publishing material
+Secondary stakeholders: Advertisers, platform moderators, data protection teams, customer support
+Decision makers: Product management, engineering leadership, legal and compliance teams, executive leadership
 
 Identify any vulnerable or high-risk groups
-Elderly pedestrians requiring longer crossing times, disabled individuals with mobility aids, visually impaired pedestrians, emergency services requiring priority access, school children during peak times, cyclists in mixed traffic
+Minors accessing age-appropriate content, users with mental health vulnerabilities who may be affected by certain content types, users from marginalised communities who may face algorithmic bias, content creators dependent on platform visibility for income
 
 Note any specific cultural or demographic groups who are intended users or be affected
-Diverse London population including tourists unfamiliar with local traffic patterns, shift workers with non-standard commute times, delivery drivers from various cultural backgrounds, international students and workers new to UK traffic systems.
+Global user base spanning diverse cultural backgrounds, languages, and content preferences. Content creators from underrepresented communities whose reach may be affected by algorithmic decisions. Users in regions with varying digital literacy levels and different expectations of algorithmic transparency.
 
 ## Categorisation of use-case
 
@@ -45,10 +45,10 @@ Diverse London population including tourists unfamiliar with local traffic patte
 <!--%PURPOSE_CODE-->
 - [ ] **Creates (C)** - Makes new things for users (new content creation)
 - [x] **Decides (D)** - Chooses for users (decision making, recommendations)
-- [ ] **Finds (F)** - Finds things for users (identification, discovery, information retrieval)
+- [x] **Finds (F)** - Finds things for users (identification, discovery, information retrieval)
 - [x] **Predicts (P)** - Tells users what's coming (prediction, monitoring)
 - [ ] **Helps (H)** - Provides guidance to users (digital assistance, performance improvement)
-- [x] **Acts (A)** - Takes actions for users (process automation, robotic automation)
+- [ ] **Acts (A)** - Takes actions for users (process automation, robotic automation)
 - [ ] **Explains (E)** - Makes things clearer for users (summarising, interpretation, synthesising)
 - [ ] **Translates (T)** - Converts input from one form to another (language translation, modality conversion, input recognition)
 - [ ] **Unknown (?)** - The purpose or role of this system is not known or decided
@@ -56,8 +56,8 @@ Diverse London population including tourists unfamiliar with local traffic patte
 **Environment** (In what context is the system operating? Select ONE or ? for unknown)
 <!--%ENVIRONMENT_CODE-->
 - [ ] **Low-stakes (L)** - Entertainment, convenience, internal tools
-- [ ] **Social-facing (S)** - Public interaction, reputation, relationships
-- [x] **High-stakes (H)** - Safety, health, finance, legal decisions, well-being affecting
+- [x] **Social-facing (S)** - Public interaction, reputation, relationships
+- [ ] **High-stakes (H)** - Safety, health, finance, legal decisions, well-being affecting
 - [ ] **Unknown (?)** - The environment for the use-case is not known or decided
 
 ## Categorisation of System Design Forces
@@ -79,8 +79,8 @@ Diverse London population including tourists unfamiliar with local traffic patte
 **Persistence level** (What level of persistence does the system have in for users or context? Select ONE or ? for unknown)
 <!--%PERSISTENCE_CODE-->
 - [ ] **Transactional (T)** - Stateless, each interaction or session is independent.
-- [ ] **Stateful (S)** - Remembers context/history, builds continuity
-- [x] **Persistent (P)** - Ongoing pursuit of goals and task execution without requiring prompting
+- [x] **Stateful (S)** - Remembers context/history, builds continuity
+- [ ] **Persistent (P)** - Ongoing pursuit of goals and task execution without requiring prompting
 - [ ] **Unknown (?)** - The persistence level of the system is not known or decided.
 
 **Capability Level** (What's the sophistication and power of the underlying system? Select ONE or ? for unknown)
@@ -93,7 +93,7 @@ Diverse London population including tourists unfamiliar with local traffic patte
 **Data Sources** (select all that apply)
 <!--%DATA_CODE-->
 - [x] **Controlled Internal(I)** - Operating organisation's own data
-- [ ] **User-Provided(U)** - End users input
+- [x] **User-Provided(U)** - End users input
 - [x] **Verified Public(V)** - Vetted datasets, government, academic sources
 - [ ] **Unverified Public(W)** - Scraped web content, social media
 - [x] **Third-Party Licensed(T)**
@@ -101,14 +101,14 @@ Diverse London population including tourists unfamiliar with local traffic patte
 **Other Behaviours** (What other system behaviours are relevant? Select any/all applicable, leave blank if none apply)
 <!--%OTHER_SYS_CODE-->
 - [ ] **Agentic Interaction (A)** - System will operate in an agentic colony structure (i.e. communicating with and sharing work with other cognitive agents)
-- [x] **Upstream (U)** - System operates upstream of other cognitive agents (i.e. the system will call other AI to execute tasks).
+- [ ] **Upstream (U)** - System operates upstream of other cognitive agents (i.e. the system will call other AI to execute tasks).
 - [ ] **Downstream (D)** - System is downstream of other cognitive agents (i.e. the system is called by other AI to execute tasks).
 
 ## Categorisation of Stakeholder and Cultural Forces
 
 At this moment Stakeholder and Cultural forces are not in scope for the framework and default to "All":
 
-<!--%CAPABILITY_CODE-->
+<!--%STAKEHOLDER_CODE-->
 - [X] **ALL STAKEHOLDERS GROUPS (ALL)**
 
 <!--%CULTURES_CODE-->
